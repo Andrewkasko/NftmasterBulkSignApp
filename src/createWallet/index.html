@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>NFTMASTER - Create a wallet</title>
+    <link rel="stylesheet" href="../index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.js"></script>
+    <script src="https://unpkg.com/xrpl@2.6.0/build/xrpl-latest-min.js"></script>
+    <script src="./createWallet.js"></script>
+<meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+</head>
+
+<body>
+    <div class="row">
+        <a style="text-decoration: none!important; padding-right:20px; margin-top: -50px;" href="../index.html"
+            class="btn btn-primary">← back</a>
+        <img src="../images/nftmaster-dark.png" alt="nftmaster logo" width="225" height="65"
+            style="border-radius: 20px; padding-top:10px; padding-left:110px;">
+    </div>
+    <hr>
+    <div class="row d-flex justify-content-center">
+        <h1>Create a Wallet</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <button id="generateWallet" class="btn btn-primary">Generate wallet</button>
+    </div>
+    <br>
+    <h5 id="walletAddress"></h5>
+    <h5 id="walletSeed"></h5>
+    <div class="d-flex justify-content-center">
+        <p style="max-width: 600px; word-wrap: break-word;" id="fullResponse"></p>
+    </div>
+</body>
+</html>

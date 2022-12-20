@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>NFTMASTER - Bulk offer</title>
+    <link rel="stylesheet" href="../index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./bulkOffer.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+</head>
+
+<body>
+    <div class="row">
+        <a style="text-decoration: none!important; padding-right:20px; margin-top: -50px;" href="../index.html"
+            class="btn btn-primary">← back</a>
+        <img src="../images/nftmaster-dark.png" alt="nftmaster logo" width="225" height="65"
+            style="border-radius: 20px; padding-top:10px; padding-left:110px;">
+    </div>
+    <hr>
+
+    <div class="row d-flex justify-content-center">
+        <h1>Bulk Offer</h1>
+    </div>
+    <br>
+    <form id="sign-batch">
+        <div class="row" style="padding-top:20px;">
+            <label for="XRPLNodeLbl">XRPL Node</label>
+        </div>
+        <div class="row" style="padding-top:10px;">
+            <input class="input-field" type="text" id="XRPLNode" name="XRPLNode"
+                placeholder="wss://xrpl..." required>
+        </div>
+        <div class="row" style="padding-top:20px;">
+            <label for="BatchID">Offer Batch ID</label>
+        </div>
+        <div class="row" style="padding-top:10px;">
+            <input class="input-field" type="text" id="BatchID" name="BatchID"
+                placeholder="Enter the Offer Batch ID from nftmaster" required>
+        </div>
+        <div class="row" style="padding-top:20px;">
+            <label for="XrpAddress">XRP Address</label>
+        </div>
+        <div class="row" style="padding-top:10px;">
+            <input class="input-field" type="text" id="XrpAddress" name="XrpAddress"
+                placeholder="XRP Address" required>
+        </div>
+        <div class="row" style="padding-top:20px;">
+            <label for="Seed">Seed</label>
+        </div>
+        <div class="row" style="padding-top:10px;">
+            <input class="input-field" type="text" id="Seed" name="Seed"
+                placeholder="Seed" required>
+        </div>
+        <div class="row d-flex justify-content-center" style="padding:20px;">
+            <button class="btn btn-primary" style="border-radius: 8px!important;" type="submit">Sign</button>
+        </div>
+    </form>
+    <hr>
+    <p id="result"></p>
+    <p id="signingProgress"></p>
+    <p id="completedSigning"></p>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+body {
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  background-color: #001220;
+  color: white;
+}
+
+@font-face {
+  font-family: Roobert;
+  src: url(./font/Roobert-Medium.woff2);
+}
+
+@font-face {
+  font-family: Roobert;
+  src: url(./font/Roobert-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roobert;
+  src: url(./font/Roobert-SemiBold.woff2);
+  font-weight: 700;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.create-grid-wrapper {
+  display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.create-btn {
+  min-width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  text-decoration: none !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  outline: none !important;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.input-field {
+  display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #234 !important;
+    background-clip: padding-box;
+    border: 1px solid #234;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
