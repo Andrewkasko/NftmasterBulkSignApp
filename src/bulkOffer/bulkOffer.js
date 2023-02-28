@@ -46,7 +46,7 @@ function signOffers(offers, xrpAddress, seed, xrplNode) {
 
         let tempSequence = await getCurrentSequence(my_wallet.address, client);
 
-        for (let i = 0; i < NFTs.length; i++) {
+        for (let i = 0; i < offers.length; i++) {
 
             let txJSON = {
                 "TransactionType": "NFTokenCreateOffer",
